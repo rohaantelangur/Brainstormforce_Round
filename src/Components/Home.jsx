@@ -142,7 +142,7 @@ const Home = () => {
             className="Iframe"
             height={"100vh"}
             src={ScreenUrl[Screens]}
-            title="Iframe Example"
+            title={"Screen " + (+Screens+1)}
           />
         </Box>
       </Box>
@@ -151,12 +151,12 @@ const Home = () => {
         className={Draw === "DrwHarf" ? "DrwHarf" : "DrwFull"}
         hidden={Draw === "" ? true : false}
       >
-        <Box bg="#000">
+        <Box bg="#000" alignItems="center">
           <HStack justifyContent="space-between">
             <Heading size="md" mx="10px">
               {ScreenUrl?.length} Screens
             </Heading>
-            <HStack>
+            <HStack >
               <InputGroup size="sm" w="80%">
                 <InputLeftAddon color="white">
                   <BsSearch />

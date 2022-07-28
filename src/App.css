@@ -1,17 +1,16 @@
-body{
+body {
   background-color: black;
   color: white;
 }
-.StckyFoot{
+.StckyFoot {
   position: fixed;
   bottom: 0px;
   height: 80px;
   left: 0px;
   z-index: 9999 !important;
   transition: all linear 0.5s;
-
 }
-.StckyFootHied{
+.StckyFootHied {
   position: fixed;
   height: 0px;
   bottom: 0px;
@@ -19,48 +18,46 @@ body{
   z-index: 99999 !important;
   transition: all linear 0.5s;
 }
-.Iframe{
+.Iframe {
   z-index: 0 !important;
   width: 100%;
   overflow: hidden;
 }
-.topbox{
+.topbox {
   height: 200px;
 }
-.topbox2{
+.topbox2 {
   height: 500px;
 }
-.screen1{
-height: 90vh;
-transition: all linear 0.5s;
-
+.screen1 {
+  height: 90vh;
+  transition: all linear 0.4s;
 }
-.screen2{
-height: 100vh;
-transition: all linear 0.5s;
-}
-.screen3{
-height: 50vh;
-transition: all linear 0.5s;
-}
-.screen4{
-  height: 0vh;
-transition: all linear 0.5s;
-}
-.DrwHarf{
-height: 50vh;
-transition: all linear 0.5s;
-}
-.DrwFull{
+.screen2 {
   height: 100vh;
-transition: all linear 0.5s;
+  transition: all linear 0.4s;
 }
-.ActiveScreen{
+.screen3 {
+  height: 50vh;
+  transition: all linear 0.4s;
+}
+.screen4 {
+  height: 0vh;
+  transition: all linear 0.4s;
+}
+.DrwHarf {
+  height: 50vh;
+  transition: all linear 0.4s;
+}
+.DrwFull {
+  height: 100vh;
+  transition: all linear 0.4s;
+}
+.ActiveScreen {
   border: 4px solid blue;
   border-radius: 5px;
-
 }
-.InactiveScreen{
+.InactiveScreen {
   border: 4px solid black;
-  border-radius: 5px;  
+  border-radius: 5px;
 }
