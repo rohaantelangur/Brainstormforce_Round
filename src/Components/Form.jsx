@@ -57,7 +57,7 @@ export const theme = extendTheme({
   },
 });
 
-export default function Test() {
+const Form = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [CheckSubmit, setCheckSubmit] = useState(false);
   const [FormData, setFormData] = useState({
@@ -190,3 +190,5 @@ export default function Test() {
     </ChakraProvider>
   );
 }
+
+export default Form;
