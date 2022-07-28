@@ -92,6 +92,8 @@ const Form = () => {
                 Already have an account? <Link color={"blue.400"}>Sign in</Link>
               </Text>
             </Stack>
+            <form onSubmit={HandleSubmit}>
+
             <FormControl
               mb={8}
               variant="floating"
@@ -106,11 +108,11 @@ const Form = () => {
             <FormControl
               variant="floating"
               id="email-address"
+              type="email"
               isRequired
               mb={7}
               isInvalid={
-                (FormData.Email !== "" && !FormData.Email.includes("@")) ||
-                CheckSubmit
+                (FormData.Email !== "" && !FormData.Email.includes("@"))
               }
             >
               <Input placeholder=" " name="Email" onChange={HandleChange} />
@@ -126,7 +128,7 @@ const Form = () => {
                 placeholder="I would describe my user type as"
                 name="Selected"
                 onChange={HandleChange}
-              >
+                >
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
                 <option value="option3">Option 3</option>
@@ -140,14 +142,15 @@ const Form = () => {
                   type={showPassword ? "text" : "password"}
                   name="Password"
                   onChange={HandleChange}
-                />
+                  minLength="8"
+                  />
                 <InputRightElement h={"full"}>
                   <Button
                     variant={"ghost"}
                     onClick={() =>
                       setShowPassword((showPassword) => !showPassword)
                     }
-                  >
+                    >
                     {showPassword ? <ViewIcon /> : <ViewOffIcon />}
                   </Button>
                 </InputRightElement>
@@ -155,9 +158,10 @@ const Form = () => {
               <FormHelperText>Minimum 8 character</FormHelperText>
             </FormControl>
 
-            <Button w="100%" mt={5} type="Submit" onClick={HandleSubmit}>
+            <Button w="100%" mt={5} type="Submit" >
               Next
             </Button>
+          </form>
 
             <Stack pt={3}>
               <Text fontSize={"xs"}>
