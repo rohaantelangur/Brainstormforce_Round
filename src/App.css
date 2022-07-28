@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color: black;
   color: white;
 }
+.StckyFoot{
+  position: fixed;
+  bottom: 0px;
+  height: 80px;
+  left: 0px;
+  z-index: 9999 !important;
+  transition: all linear 0.5s;
 
-.App-link {
-  color: #61dafb;
 }
+.StckyFootHied{
+  position: fixed;
+  height: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99999 !important;
+  transition: all linear 0.5s;
+}
+.Iframe{
+  z-index: 0 !important;
+  width: 100%;
+  overflow: hidden;
+}
+.topbox{
+  height: 200px;
+}
+.topbox2{
+  height: 500px;
+}
+.screen1{
+height: 90vh;
+transition: all linear 0.5s;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.screen2{
+height: 100vh;
+transition: all linear 0.5s;
+}
+.screen3{
+height: 50vh;
+transition: all linear 0.5s;
+}
+.screen4{
+  height: 0vh;
+transition: all linear 0.5s;
+}
+.DrwHarf{
+height: 50vh;
+transition: all linear 0.5s;
+}
+.DrwFull{
+  height: 100vh;
+transition: all linear 0.5s;
+}
+.ActiveScreen{
+  border: 4px solid blue;
+  border-radius: 5px;
+
+}
+.InactiveScreen{
+  border: 4px solid black;
+  border-radius: 5px;  
 }
