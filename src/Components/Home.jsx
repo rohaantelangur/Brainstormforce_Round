@@ -115,7 +115,7 @@ const Home = () => {
           p={"40px"}
           fontSize={"30px"}
           position="absolute"
-          left={600}
+          left={"43%"}
           top={top}
           transform={"translate(0%, -50%)"}
           zIndex={2}
